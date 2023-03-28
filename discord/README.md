@@ -7,6 +7,6 @@ Dans cette application il sera possible de vous connecter avec edes identifiants
 pour installer le projet :
 
     cloner le projet en local avec la commande "git clone"
-    rentrer dans le projet en faisant "cd discord"
+    rentrer dans le projet en faisant "cd discordlikz" puis "cd discord"
     lancer la commande "npm i"
     et enfin pour lancer le projet ,éffectuer la commande "npm run dev"
