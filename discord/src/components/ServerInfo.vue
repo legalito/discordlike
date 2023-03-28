@@ -151,9 +151,8 @@
         .then(response => {
           console.log('add user !');
           this.server.users.push(this.valeurInput)
-        }).then(
-            this.auth.getServer()
-          )
+          this.auth.getServer()
+        })
         .catch(error => {
           console.error('Erreur lors de ajout de user :', error);
           throw error;
