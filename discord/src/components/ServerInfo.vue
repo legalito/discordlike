@@ -28,7 +28,7 @@
     <div class="server-users">
       <h2>Utilisateurs</h2>
       <input v-model="valeurInput" type="text">
-      <button @click="addUser">Add user</button>
+      <button @click="AddUser">Add user</button>
       <ul>
         <li v-for="(user, index) in server.users" :key="index">
           <button @click="deleteUser(user)">X</button>{{ user }}

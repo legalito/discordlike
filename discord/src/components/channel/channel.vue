@@ -7,6 +7,9 @@
           <label>Nom du channel:
             <input type="text" v-model="channelName" required>
           </label>
+          <label>Image :
+            <input type="text" v-model="img" >
+          </label>
           <label>Couleur du channel:</label>
           <div class="palette"  v-for="(palette, index) in palettes" :key="index">
             <div>{{ palette.name }}</div>

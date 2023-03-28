@@ -16,11 +16,11 @@
     <connexion/>
   </header>
   <main>
-    
-    <div class="channel">
-      <navigation />
+    <div v-if="token">
+      <div class="channel">
+        <navigation />
+      </div>
     </div>
-    
   </main>
 </template>
 
@@ -28,6 +28,10 @@
 main{
   height: 90vh;
   width: 100vw;
+}
+main > div{
+  height: 100%;
+  width: 100%;
 }
 .salon{
   background-color: #2f3136;
