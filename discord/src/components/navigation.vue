@@ -59,7 +59,7 @@ import { watch } from 'vue';
       <h2>Servers</h2>
       <ul>
         <li  v-for="server in servers" :key="server.id"  @click="selectServer(server)">
-          <img :src="server.im" />
+          <img :src="server.img" />
           <div class="server-info">
             <h3>{{ server.name }}</h3>
           </div>

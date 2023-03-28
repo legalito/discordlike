@@ -23,6 +23,7 @@
     <div class="server-chat">
       <input placeholder="Envoyer un message" v-model="newMessage" type="text">
       <button @click="sendMessage">Send message</button>
+      
     </div>
     </div>
     <div class="server-users">
@@ -75,7 +76,7 @@
   },
   data() {
     return {
-      
+      imageChat: '',
       valeurInput: '',
       auth: useAuthStore(),
       showModal: false,
@@ -192,6 +193,7 @@
             const chatMessages = this.$refs.chatMessages;
             chatMessages.scrollTop = chatMessages.scrollHeight;
           });
+          this.newMessage = '';
           
         })
         .catch(error => {
