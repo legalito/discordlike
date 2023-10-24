@@ -13,7 +13,9 @@
 
 <template>
   <header>
-    <connexion/>
+    <div v-if="!token">
+      <connexion/>
+    </div>
   </header>
   <main>
     <div v-if="token">
@@ -25,8 +27,12 @@
 </template>
 
 <style scoped>
+header{
+  position: absolute;
+  z-index: 5;
+}
 main{
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
 }
 main > div{
